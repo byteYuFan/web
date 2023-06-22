@@ -1,0 +1,103 @@
+.main{
+    line-height: 1.5;
+    color: #333;
+}
+.clearfix::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.main .nav{
+    height: 60px;
+    background-color: #47464a;
+    color: #999;
+    text-align: center;
+    line-height: 60px;
+}
+
+.main .nav a{
+    margin: 0  36px;
+}
+.main .nav a:hover{
+    color: #ffffff;
+}
+.main .nav a.active{
+    color: #ef4238;
+}
+
+.main .container{
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.main .container .choice-area{
+    border: 1px solid #e3e4e5;
+    margin: 40px 0;
+    font-size: 14px ;
+    line-height: 30px;
+    padding: 0 30px;
+}
+.main .container .choice-area .choice-item{
+    margin: 1em 0;
+    border-bottom: 1px dotted #e5e5e5;
+}
+.main .container .choice-area .choice-item .left {
+    float: left;
+
+    color: #999;
+}
+
+.main .container .choice-area .choice-item .right {
+    float: left;
+    width: 1010px;
+
+}
+
+.main .container .choice-area .choice-item .right li{
+    float: left;
+    margin: 0 9px;
+}
+
+.main .container .choice-area .choice-item .right li:hover{
+    color: #ef4238;
+}
+
+.main .container .choice-area .choice-item .right li.active{
+    background-color: #ef4238;
+    color: #ffffff;
+    border-radius: 15px;
+}
+
+.main .container .movies .movie-item{
+    float: left;
+    width: 160px;
+    margin: 10px 32px 10px 0 ;
+
+}
+
+.main .container .movies .movie-item:nth-child(6n){
+    margin-right: 0;
+}
+.main .container .movies .movie-item .poster img{
+    width: 160px;
+    height: 220px;
+}
+
+.main .container .movies .movie-item  .name{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 2px;
+    text-align: center;
+}
+
+.main .container .movies .movie-item .score{
+    color: #ffb400;
+    text-align: center;
+    line-height: 2.5;
+    font-style: italic ;
+}
+
+.main .container .movies .movie-item .score::first-letter{
+    font-size: 1.5em;
+}

@@ -1,0 +1,44 @@
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.header {
+    background-color: #e3e4e5;
+    color: #999;
+    height: 40px;
+    line-height: 40px  ;
+    position: fixed;
+    width: 100%;
+}
+
+.header .top-nav>li {
+    float: left;
+    margin: 0 15px;
+    width: 150px;
+    text-align: center;
+    padding: 0 8px;
+    height: 40px;
+    box-sizing: border-box;
+    position: relative;
+
+}
+.header .top-nav>li:hover {
+    background-color: lightblue;
+    border: 2px solid #cccccc;
+    border-bottom: none;
+    line-height: 36px;
+}
+.header .top-nav>li .sub-menu{
+    text-align: center;
+    line-height: 1.5;
+    width: 300px;
+    display: none;
+    border: 2px solid #cccccc;
+    box-sizing: border-box;
+    position: absolute;
+    right: -4px;
+}
+.header .top-nav>li:hover .sub-menu{
+    display: block;
+}

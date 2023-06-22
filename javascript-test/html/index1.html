@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <strong>
+            <span>
+                <i></i>
+            </span>
+    </strong>
+    <p></p>
+    <div></div>
+
+</div>
+<script type="application/javascript">
+    function retParent(element, n) {
+       if (n === 0) {
+            return element
+        }
+        if (!element){
+            return null
+        }
+        return retParent(element.parentElement, n - 1)
+    }
+
+    // const i = document.getElementsByTagName('i')[0]
+    // for(let j = 0; j<10 ;j++){
+    //     console.log(retParent(i,j))
+    // }
+
+    // 找该元素的子元素的节点
+    Element.prototype.myChildren = function (){
+        let child = this.childNodes
+        const len = child.length
+        let arr =Object.create(Array.prototype,{
+            length:{
+                value:0,
+                writable:true
+            }
+        })
+        for(let i = 0;i<len;i++){
+            if(child[i].nodeType===1){
+                arr.push(child[i])
+            }
+        }
+        return arr
+    }
+    // const div = document.getElementsByTagName('div')[0]
+    // console.log(div.myChildren())
+
+    // 返回兄弟节点
+    function retSibling(element,n){
+
+    }
+
+
+</script>
+</body>
+</html>
